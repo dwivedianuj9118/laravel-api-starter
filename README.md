@@ -53,7 +53,34 @@ API_ENABLE_SANCTUM=true
 API_AUTH_MODEL=App\Models\User
 
 ```
+### JWT Guard 
+You must define a JWT guard in `config/auth.php`.
 
+```php
+'guards' => [
+
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
+
+    'jwt' => [
+        'driver' => 'jwt',
+        'provider' => 'users',
+    ],
+
+],
+```
+### Ensure provider exists
+```php
+'providers' => [
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
+    ],
+],
+
+```
 ---
 ## 🧯 Global API Exception Handling
 
@@ -133,6 +160,10 @@ class User extends Authenticatable implements JWTSubject
     }
 }
 ```
+If you are using JWT authentication, you must also define a `JWTSubject` interface in your model. And if you are using Sanctum authentication, you must also define a `HasApiTokens` trait in your model.
+
+If you are using JWT and want to use middleware, you can use the `auth:jwt` middleware. And if you are using Sanctum, you can use the `auth:sanctum` middleware.
+
 ### Default:
 
 ## 🔐 Authentication
