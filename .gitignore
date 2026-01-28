@@ -1,0 +1,30 @@
+# Dependencies
+/vendor
+/node_modules
+
+# Environment
+.env
+.env.*
+
+# IDE / Editor
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / Cache
+.phpunit.result.cache
+coverage
+storage/*.key
+
+# Build artifacts
+dist
+build
+
+# Temporary files
+*.log
+*.tmp
