@@ -1,6 +1,6 @@
 {
   "name": "dwivedianuj9118/laravel-api-starter",
-  "description": "Production ready API boilerplate for Laravel 11+",
+  "description": "A complete API Starter Kit for Laravel 11+ designed to accelerate backend development. This package provides a clean and scalable API architecture with authentication, request validation, standardized API responses, error handling, and best practices. Perfect for SaaS platforms, mobile apps, admin panels, and high-performance REST APIs built with Laravel.",
   "type": "library",
   "license": "MIT",
   "homepage": "https://anujdwivedi.in",
@@ -15,7 +15,17 @@
     "jwt",
     "sanctum",
     "swagger",
-    "boilerplate"
+    "boilerplate",
+    "laravel",
+    "laravel 11",
+    "laravel api",
+    "laravel api starter",
+    "laravel rest api",
+    "laravel backend",
+    "laravel boilerplate",
+    "laravel authentication",
+    "saas backend",
+    "api starter kit"
   ],
 
   "require": {
